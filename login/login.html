@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    }
+
+    #login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .card {
+     background-color: rgba(19, 19, 19, 0.507); 
+    padding: 40px;
+    border-radius: 2px;
+    width:280px;
+    transition-duration: 0.5s;
+    }
+    .card:hover {
+        background-color: rgba(0, 0, 0, 0.103);
+    }
+
+    .card-header {
+    padding-bottom: 50px;
+    opacity: 0.8;
+    color: #fff;
+    }
+
+    .card-header::after {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-top: -17px;
+    margin-left: -5px;
+    }
+
+    .card-content label {
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.8;
+    }
+
+    .card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding:10px 0;
+    }
+
+    .card-content-area input {
+    margin-top: 10px;
+    padding:0 5px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    color: #fff;
+    }
+
+    .card-footer > a {
+        text-decoration: none;
+        color: orange;
+    }
+
+.voltar{
+
+background-color: #FFF;
+text-align: center;
+margin:  10px auto;
+padding: 5px;
+}
+
+.voltar > a {
+    text-decoration: none;
+    color: black;
+}
+
+.voltar > a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+    <main>
+        <div id="login">
+
+            <form class="card">
+
+                <div class="card-header">
+
+                    <h2>Login</h2>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-content-area">
+
+                        <label for="usuario">Usuário</label>
+
+                        <input type="text" id="usuario" autocomplete="off">
+
+                    </div>
+
+                    <div class="card-content-area">
+
+                        <label for="password">Senha</label>
+
+                        <input type="password" id="password" autocomplete="off">
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <input type="submit" value="login" class="submit">
+
+                    <button class="botao-volta" onclick="Redefinir()">Redefinir</button>
+
+                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+
+                </div>
+
+                <div class="voltar">
+                    <a href="../infotec.html">Página inicial</a>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+   

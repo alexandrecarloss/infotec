@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+:root {
+    --cor0: #36BFB1;
+    --cor1: #038C73;
+    --cor2: #02735E;
+    --cor3: #014034;
+    --cor4: #FFF;
+
+    --fonte-info: 'Press start 2P', Monaco, monospace;
+    --fonte-padrão: Arial, Helvetica, sans-serif;
+    --fonte-p: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+Body {
+    font-family: var(--fonte-padrão);
+    background-color: var(--cor0);
+}
+
+p{
+    text-indent: 20px;
+    line-height: 2em;
+    margin: 10px;
+}
+
+header {
+    min-height: 150px;
+    text-align: center;
+    background-image: linear-gradient(to top, var(--cor0), var(--cor1));
+}
+
+header img {
+    max-width: 200px;
+    max-height: 120px;
+    float: left;
+    margin: 10px 10px 10px 50px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: var(--fonte-info);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);
+    color: var(--cor4);
+    padding: 20px;
+}
+
+header p{
+    margin: 10px;
+    color: var(--cor4);
+    font-family: var(--fonte-p);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);
+}
+
+header a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    background-color: var(--cor4);
+    padding: 2px 6px;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    margin-top: 20px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+    background-color: var(--cor3);
+}
+
+main nav {
+   min-height: 30px;
+   background-color: var(--cor3);
+   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.295);
+}
+
+main p {
+    text-align: justify;
+    font-family: var(--fonte-p);
+    font-weight: bolder;
+}
+
+main h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.8em;
+    color: var(--cor1);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+}
+
+main a {
+    float: right;
+    margin: 5px;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+    padding: 0px 6px;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    background-color: var(--cor4);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+    background-color: var(--cor3);
+}
+
+#box {
+    padding: 20px;
+    height: 1000px;
+    width: 900px;
+    margin: auto;
+    background-color: var(--cor4);
+    text-align: justify;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.301);
+}
+footer {
+margin: 5px 0px 0px 0px;
+ background-color: var(--cor1);
+ text-align: center;
+}
+
+footer abbr {
+    color: var(--cor4);
+    text-decoration: none;
+}
